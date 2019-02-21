@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Interplanetary Transport Spaceshuttle</title>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700|Rajdhani:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <img class="header_img" src="images/spacex_logo.png">
+    <h1>Interplanetary Transport Control Panel</h1>
+  </header>
+
+  <main>
+    <div class="col-left">
+      <h2>Parameters</h2>
+      <div class="border">
+        <h2>Current date on Earth</h2>
+        <p id="date"></p>
+      </div>
+
+      <div class="border">
+        <h2>Current time on Earth</h2>
+        <div id="time">
+          <p id="hour"></p>
+          <p id="minutes"></p>
+          <p id="seconds"></p>
+        </div>
+      </div>
+
+      <div class="border">
+        <h2>Time until landing on Mars</h2>
+        <p id="counter"></p>
+      </div>
+    </div>
+
+    <div class="col-middle">
+      <h2>Radar</h2>
+      <div class="border">
+        <img class="radar" src="images/radar.gif">
+      </div>
+    </div>
+
+    <div class="col-right">
+      <h2>Metrics</h2>
+      <div class="fuelBorder">
+        <h2>Fuel Reserve</h2>
+        <div class="background-bar">
+          <p class="status-bar"></p>
+        </div>
+        <button id="refuel" class="button"><img class="buttonImage" src="images/diesel.png"></button>
+      </div>
+      <div class="border">
+        <p id="miles">Put in a value you want to convert to miles on mars.</p>
+        <input type="text" id="inputMiles"></input>
+        <button id="convertMiles" class="button"><img class="buttonImageCheck" src="images/tick.png"></button>
+      </div>
+
+      <div class="border">
+        <p id="gravity">Put in a value you want to convert to gravity on mars.</p>
+        <input type="text" id="inputGravity"></input>
+        <button id="convertGravity" class="button"><img class="buttonImageCheck" src="images/tick.png"></button>
+      </div>
+    </div>
+  </main>
+
+</body>
+<script src="js/spacex.js"></script>
+
+</html>

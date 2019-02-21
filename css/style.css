@@ -1,0 +1,219 @@
+/* Colour Palette
+
+#2A323E - blue
+#F26641 - red
+
+*/
+@font-face {
+   font-family: "digital-clock";
+   src: url('../fonts/digital-7.ttf');
+}
+
+body {
+   background-color: #2A323E;
+   margin-top: 20px;
+   background: url(../images/space.gif) fixed;
+}
+
+h1 {
+   color: white;
+   text-align: center;
+   font-family: "Orbitron", sans-serif;
+   margin-top: 15px;
+   margin-bottom: 30px;
+}
+
+h2 {
+   color: lightcyan;
+   text-align: center;
+   font-family: "Orbitron", sans-serif;
+}
+
+main {
+   display: flex;
+   margin: 0 auto 0 auto;
+   max-width: 1200px;
+}
+
+header {
+   text-align: center;
+}
+
+.header_img {
+   max-width: 200px;
+}
+
+.col-left {
+   flex: 1;
+   margin-right: 20px;
+   height: 150px;
+}
+
+.col-middle {
+   flex: 2;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+.col-right {
+   flex: 1;
+   margin-left: 20px;
+}
+
+.border {
+   border: solid 5px;
+   border-color: lightcyan;
+   border-radius: 5px;
+   margin-top: 20px;
+   box-shadow: 0px 0px 10px 5px #0ff;
+}
+
+/* Time & Counter */
+#time {
+   display: flex;
+   color: lightcyan;
+   font-family: "digital-clock", sans-serif;
+   justify-content: center;
+   font-size: 45px;
+   margin-top: -50px;
+   margin-bottom: -25px;
+}
+
+#date {
+   color: lightcyan;
+   font-family: "Orbitron", sans-serif;
+   text-align: center;
+   font-size: 24px;
+   margin-bottom: 15px;
+}
+
+#counter {
+   font-family: "Orbitron", sans-serif;
+   font-size: 25px;
+   color: lightcyan;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+/* Radar screen */
+.radar {
+   max-width: 550px;
+}
+
+#filler {
+   height: 150px;
+}
+
+/* Fuel bar */
+.fuelBorder {
+   border: solid 5px;
+   border-color: lightcyan;
+   border-radius: 5px;
+   margin-top: 20px;
+   box-shadow: 0px 0px 10px 5px #0ff;
+}
+
+.status-bar {
+   background-color: lightcyan;
+   font-family: "Orbitron", sans-serif;
+   text-align: center;
+   height: 25px;
+   margin-top: 25px;
+   margin-bottom: 10px;
+   padding-top: 10px;
+}
+
+.background-bar {
+   background-color: grey;
+   width: 92%;
+   margin-left: 10px;
+   margin-right: 10px;
+   text-align: center;
+}
+
+/* Converter Miles & Gravity */
+#miles {
+   font-family: "Orbitron", sans-serif;
+   color: white;
+   text-align: center;
+   padding-left: 5px;
+   padding-right: 5px;
+}
+
+#inputMiles {
+   font-family: "Orbitron", sans-serif;
+   font-size: 18px;
+   text-align: center;
+   width: 70%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 15px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+#inputMiles:focus {
+   border-color: lightcyan;
+   box-shadow: 0px 0px 10px 2px #0ff;
+}
+
+#gravity {
+   font-family: "Orbitron", sans-serif;
+   color: white;
+   text-align: center;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+#inputGravity {
+   font-family: "Orbitron", sans-serif;
+   font-size: 18px;
+   text-align: center;
+   width: 70%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 15px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+#inputGravity:focus {
+   border-color: lightcyan;
+   box-shadow: 0px 0px 10px 2px #0ff;
+}
+
+/* Button */
+.button {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 15px;
+   border-radius: 50%;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   background-color: transparent;
+   border: solid 2px lightcyan;
+   box-shadow: 0px 0px 10px 2px #0ff;
+}
+
+.button:hover {
+   background-color: lightcyan;
+}
+
+.button:focus {
+   outline-style: none;
+}
+
+.buttonImage {
+   max-width: 25px;
+   max-height: 25px;
+}
+
+.buttonImageCheck {
+   max-width: 20px;
+   max-height: 20px;
+}
