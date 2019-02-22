@@ -7,23 +7,34 @@ function checkTime(i) {
 }
 
 // Checks if day is 1, 2, or 3 and adds prefix, otherwise th
+
+
 function checkDay(n) {
-  if (n == 1) {
-    n = n + "<sup>st</sup>";
-  } else if (n == 2) {
-    n = n + "<sup>nd</sup>";
-  } else if (n == 3) {
-    n = n + "<sup>rd</sup>";
-  } else if (n == 21) {
-    n = n + "<sup>st</sup>";
-  } else if (n == 22) {
-    n = n + "<sup>nd</sup>";
-  } else if (n == 23) {
-    n = n + "<sup>rd</sup>";
-  } else if (n == 31) {
-    n = n + "<sup>st</sup>";
-  } else {
-    n = n + "<sup>th</sup>";
+  switch (n) {
+    case 1:
+      n = n + "<sup>st</sup>";
+      break;
+    case 2:
+      n = n + "<sup>nd</sup>";
+      break;
+    case 3:
+      n = n + "<sup>rd</sup>";
+      break;
+    case 21:
+      n = n + "<sup>st</sup>";
+      break;
+    case 22:
+      n = n + "<sup>nd</sup>";
+      break;
+    case 23:
+      n = n + "<sup>rd</sup>";
+      break;
+    case 31:
+      n = n + "<sup>st</sup>";
+      break;
+    default:
+      n = n + "<sup>th</sup>";
+      break;
   }
   return n;
 }
@@ -205,4 +216,4 @@ function decreaseFuel() {
 // Runs function
 decreaseFuel();
 
-console.log("Welcome to the console!")
+console.log("Welcome to the console!");
