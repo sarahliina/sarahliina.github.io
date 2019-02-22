@@ -7,8 +7,6 @@ function checkTime(i) {
 }
 
 // Checks if day is 1, 2, or 3 and adds prefix, otherwise th
-
-
 function checkDay(n) {
   switch (n) {
     case 1:
